@@ -1,0 +1,25 @@
+{
+    "name": "xvr-language",
+    "displayName": "XVR Language",
+    "description": "XVR Language syntax highlighting",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.40.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "xvr",
+            "aliases": ["XVR", "xvr"],
+            "extensions": [".s3d"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "xvr",
+            "scopeName": "source.xvr",
+            "path": "./syntaxes/xvr.tmLanguage.json"
+        }]
+    }
+}
